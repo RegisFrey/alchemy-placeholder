@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang=en>
+<html lang="en">
     <head>
-        <meta charset=utf-8>
-        <meta name="viewport" content="user-scalable=no,width=device-width" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <title>Alchemy?</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
@@ -16,6 +16,17 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                margin: 0;
+                padding: 0;
+                width: 100vw;
+                padding-top: 500px;
+                padding-bottom: 50px;
+                background-image: url(./above_and_below_for_all_to_be_one_what_is_known_was_hard_fought_to_be_won.png);
+                background-position-x: center;
+                background-position-y: -20px;
+                background-repeat: no-repeat;
             }
             h1, h2 { font-weight: normal; }
             .notice-form {
@@ -24,25 +35,31 @@
                 background-color: #DFCFC9;
                 color: rgb(66, 48, 42);
                 position: relative;
-                max-width: 90%;
+                max-width: 90vw;
+                overflow-x: hidden;
+                overflow-y: scroll;
             }
             .return {
                 text-align: left;
+                line-height: 1.1em;
             }
             .top-row {
                 padding: 15px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                align-items: flex-start;
             }
-
             h2 { padding: 10px; margin: 0; border-bottom: 1px solid rgba(232, 206, 182, 0.2); }
             .alc_signup_row {
                 display: flex;
                 flex-direction: row;
                 padding: 32px;
             }
-            @media only screen and (max-width: 400px) {
+            .notice-form img {
+                width: 100px;
+            }
+            @media only screen and (max-width: 500px) {
                 .alc_signup_row {
                     flex-direction: column;
                     align-items: stretch;
@@ -83,8 +100,6 @@
         </style>
     </head>
     <body>
-        <img src="above_and_below_for_all_to_be_one_what_is_known_was_hard_fought_to_be_won.png" />
-
         <div class="notice-form">
             <div class="top-row">
                 <div class="return">
@@ -93,11 +108,7 @@
                     <i>Incinerate on nondelivery</i>
                 </div>
 
-                <img
-                    width="100"
-                    src="stamp.png"
-                    alt="Letter Guard Stamp"
-                    />
+                <img src="stamp.png" alt="Letter Guard Stamp" />
             </div>
             
             <div class="alc_signup_row">
